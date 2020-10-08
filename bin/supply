@@ -55,3 +55,8 @@ else
     fi
 fi
 
+echo "-----> Adding buildpack metadata to ${DEPS_DIR}/${DEPS_IDX}"
+cat <<EOF > "${DEPS_DIR}/${DEPS_IDX}/config.yml"
+name: grafana
+version: 0.0.1
+EOF
